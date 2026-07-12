@@ -1,0 +1,764 @@
+/* ==========================
+   RESET
+========================== */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:'Poppins',sans-serif;
+    background:#f4f8f4;
+}
+
+/* ==========================
+   HEADER
+========================== */
+
+header{
+
+    background:#0b5d2a;
+
+    padding:20px 70px;
+
+    color:white;
+
+}
+
+.header-container{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+}
+
+.logo-section{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:20px;
+
+}
+
+.logo{
+
+    width:70px;
+
+    height:70px;
+
+    background:#2e8b57;
+
+    border-radius:15px;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    font-size:38px;
+
+    color:white;
+
+}
+
+.company-details h1{
+
+    font-size:52px;
+
+    font-weight:700;
+
+    line-height:1;
+
+}
+
+.company-details p{
+
+    font-size:20px;
+
+    margin-top:12px;
+
+    color:#f2f2f2;
+
+}
+
+.header-buttons{
+
+    display:flex;
+
+    gap:20px;
+
+}
+
+.header-buttons button{
+
+    padding:14px 24px;
+
+    border:none;
+
+    border-radius:10px;
+
+    background:white;
+
+    color:#0b5d2a;
+
+    font-size:16px;
+
+    font-weight:600;
+
+    cursor:pointer;
+
+    transition:.3s;
+
+}
+
+.header-buttons button:hover{
+
+    transform:translateY(-2px);
+
+    box-shadow:0 10px 20px rgba(0,0,0,.15);
+
+}
+
+.header-buttons i{
+
+    margin-right:8px;
+
+}
+/* ==========================
+   NAVBAR
+========================== */
+
+nav{
+
+    background:#1d8c42;
+
+    height:65px;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+}
+
+nav ul{
+
+    display:flex;
+
+    list-style:none;
+
+    gap:25px;
+
+}
+
+nav ul li{
+
+    border-radius:10px;
+
+    transition:.3s;
+
+}
+
+nav ul li a{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:8px;
+
+    text-decoration:none;
+
+    color:white;
+
+    font-weight:600;
+
+    padding:18px 22px;
+
+}
+
+nav ul li:hover{
+
+    background:#2ea84d;
+
+}
+
+.active{
+
+    background:#39a94d;
+
+}
+
+nav i{
+
+    font-size:18px;
+
+}
+/* ==========================
+   HERO SECTION
+========================== */
+
+.hero{
+
+    padding:30px;
+
+}
+
+.hero-content{
+
+    background:white;
+
+    border-radius:20px;
+
+    box-shadow:0 10px 30px rgba(0,0,0,.08);
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    padding:60px;
+
+}
+
+.hero-left{
+
+    width:45%;
+
+}
+
+.hero-left h2{
+
+    font-size:28px;
+
+    color:#222;
+
+}
+
+.hero-left h1{
+
+    font-size:70px;
+
+    color:#1b7c38;
+
+    margin:10px 0 20px;
+
+    line-height:1.1;
+
+}
+
+.hero-left p{
+
+    font-size:22px;
+
+    line-height:38px;
+
+    color:#555;
+
+    margin-bottom:35px;
+
+}
+
+.hero-btn{
+
+    background:#1b7c38;
+
+    color:white;
+
+    border:none;
+
+    padding:18px 35px;
+
+    border-radius:10px;
+
+    font-size:18px;
+
+    font-weight:600;
+
+    cursor:pointer;
+
+    transition:.3s;
+
+}
+
+.hero-btn:hover{
+
+    background:#14652d;
+
+    transform:translateY(-3px);
+
+}
+
+.hero-btn i{
+
+    margin-left:10px;
+
+}
+
+.hero-right{
+
+    width:50%;
+
+}
+
+.hero-right img{
+
+    width:100%;
+
+    border-radius:20px;
+
+}
+/* ==========================
+   FEATURE CARDS
+========================== */
+
+.features{
+
+    width:95%;
+
+    margin:30px auto;
+
+    display:grid;
+
+    grid-template-columns:repeat(5,1fr);
+
+    gap:25px;
+
+    align-items:stretch;
+
+}
+
+.feature-card{
+
+    background:white;
+
+    border-radius:18px;
+
+    padding:30px 20px;
+
+    text-align:center;
+
+    box-shadow:0 10px 25px rgba(0,0,0,.08);
+
+    transition:.3s;
+
+    min-height:400px;
+
+    display:flex;
+
+    flex-direction:column;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+}
+
+.feature-card:hover{
+
+    transform:translateY(-8px);
+
+}
+
+.feature-icon{
+
+    width:75px;
+
+    height:75px;
+
+    margin:auto;
+
+    border-radius:50%;
+
+    background:#1b7c38;
+
+    color:white;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    font-size:30px;
+
+    margin-bottom:25px;
+
+}
+
+.feature-card h3{
+
+    color:#1b7c38;
+
+    font-size:30px;
+
+    margin-bottom:15px;
+
+}
+
+.feature-card p{
+
+    color:#555;
+
+    line-height:30px;
+
+    margin-bottom:25px;
+
+}
+
+.feature-card a{
+
+    display:inline-block;
+
+    padding:12px 22px;
+
+    background:#edf8ef;
+
+    border-radius:8px;
+
+    color:#1b7c38;
+
+    text-decoration:none;
+
+    font-weight:600;
+
+}
+
+.feature-card a:hover{
+
+    background:#dff4e2;
+
+}
+/* ==========================
+   BOTTOM SECTION
+========================== */
+
+.bottom-section{
+
+    width:95%;
+
+    margin:30px auto;
+
+    display:grid;
+
+    grid-template-columns:1fr 1fr;
+
+    gap:25px;
+
+}
+
+.stats,
+.announcements-box{
+
+    background:white;
+
+    border-radius:18px;
+
+    padding:30px;
+
+    box-shadow:0 10px 25px rgba(0,0,0,.08);
+
+}
+
+.stats h2,
+.announcements-box h2{
+
+    color:#1b7c38;
+
+    margin-bottom:30px;
+
+}
+
+.stats-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(3,1fr);
+
+    margin-top:35px;
+
+}
+
+.stat-box{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:18px;
+
+    padding:0 20px;
+
+}
+
+.stat-box:not(:last-child){
+
+    border-right:2px solid #e8e8e8;
+
+}
+
+.stat-box i{
+
+    width:60px;
+
+    height:60px;
+
+    border-radius:50%;
+
+    background:#1b7c38;
+
+    color:white;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    font-size:22px;
+
+}
+
+.stat-box h3{
+
+    color:#1b7c38;
+
+    font-size:36px;
+
+}
+
+.announcements-box ul{
+
+    margin:20px 0;
+
+    padding-left:20px;
+
+}
+
+.announcements-box li{
+
+    margin-bottom:15px;
+
+}
+
+.announcements-box span{
+
+    background:#dff4e2;
+
+    color:#1b7c38;
+
+    padding:3px 8px;
+
+    border-radius:8px;
+
+    font-size:12px;
+
+    font-weight:bold;
+
+}
+
+.announcements-box a{
+
+    color:#1b7c38;
+
+    text-decoration:none;
+
+    font-weight:600;
+
+}
+/* ==========================
+   FOOTER
+========================== */
+
+footer{
+
+    background:#0b5d2a;
+
+    color:white;
+
+    text-align:center;
+
+    padding:25px;
+
+    margin-top:30px;
+
+    font-size:18px;
+
+}
+/* ==========================
+   COMMON PAGE
+========================== */
+
+.page{
+
+    width:90%;
+
+    margin:50px auto;
+
+}
+
+.page h1{
+
+    color:#1b7c38;
+
+    margin-bottom:40px;
+
+    font-size:42px;
+
+}
+
+.news-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(3,1fr);
+
+    gap:30px;
+
+}
+
+.news-card{
+
+    background:white;
+
+    border-radius:15px;
+
+    padding:30px;
+
+    box-shadow:0 10px 25px rgba(0,0,0,.08);
+
+    transition:.3s;
+
+}
+
+.news-card:hover{
+
+    transform:translateY(-8px);
+
+}
+
+.news-card h2{
+
+    color:#1b7c38;
+
+    margin-bottom:15px;
+
+}
+
+.news-card p{
+
+    line-height:30px;
+
+    color:#555;
+
+}
+/* ==========================
+   HOLIDAY TABLE
+========================== */
+
+.holiday-table{
+
+width:100%;
+
+border-collapse:collapse;
+
+background:white;
+
+border-radius:15px;
+
+overflow:hidden;
+
+box-shadow:0 10px 25px rgba(0,0,0,.08);
+
+}
+
+.holiday-table th{
+
+background:#1b7c38;
+
+color:white;
+
+padding:18px;
+
+font-size:18px;
+
+}
+
+.holiday-table td{
+
+padding:18px;
+
+border-bottom:1px solid #ececec;
+
+font-size:17px;
+
+}
+
+.holiday-table tr:hover{
+
+background:#edf8ef;
+
+}
+/*=========================
+CONTACT PAGE
+==========================*/
+
+.contact-container{
+
+display:grid;
+
+grid-template-columns:repeat(2,1fr);
+
+gap:40px;
+
+margin-top:40px;
+
+}
+
+.contact-card{
+
+background:white;
+
+padding:35px;
+
+border-radius:18px;
+
+box-shadow:0 10px 30px rgba(0,0,0,.08);
+
+transition:.3s;
+
+}
+
+.contact-card:hover{
+
+transform:translateY(-8px);
+
+}
+
+.contact-card h2{
+
+color:#1b7c38;
+
+margin-bottom:20px;
+
+}
+
+.contact-card p{
+
+margin:15px 0;
+
+font-size:17px;
+
+line-height:1.8;
+
+}
